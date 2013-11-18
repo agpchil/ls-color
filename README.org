@@ -1,0 +1,28 @@
+* Colorize ls output
+  =ls-color= is a simple application written in C to colorize =ls= output similar to [[https://github.com/trapd00r/ls--][trapd00r/ls--]] (see Motivation).
+
+  [[https://drive.google.com/uc?export=view&id=0Byv-S6nIE7oRZ3BvRE5qWXhURmM]]
+
+** Installation
+   You can install using GNU =autotools=:
+
+   #+BEGIN_EXAMPLE
+   autoreconf -i
+   ./configure
+   make
+   make install
+   #+END_EXAMPLE
+
+** Customization
+   Some colors and UI symbols can be customized editing the =src/config.h= file. =ls-color= needs to be recompiled for any changes to take effect.
+
+** Basic usage
+   =ls-color= accepts the same arguments as =ls= but you can't display different fields.
+   
+   (Also, some arguments are used internally to ensure some required fields are present)
+
+** Motivation
+   Some time ago I saw [[https://github.com/trapd00r/ls--][trapd00r/ls--]] project. It looked really cool and I wanted to try it. Unfortunatly I didn't want to install PERL dependencies just for that so I ended giving up. Later, I decided to just do my own implementation in C so I created =ls-color=. I never used =ls--= so I'm not sure how is different from =ls-color=. But =ls--= is a more mature project and probably has more features so maybe you should try it instead of =ls-color=.
+
+** Todo
+   - Add support to customize output fields (owner, group, datetimes, etc)

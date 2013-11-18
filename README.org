@@ -1,7 +1,7 @@
 * Colorize ls output
   =ls-color= is a simple application written in C to colorize =ls= output similar to [[https://github.com/trapd00r/ls--][trapd00r/ls--]] (see Motivation).
 
-  [[https://drive.google.com/uc?export=view&id=0Byv-S6nIE7oRZ3BvRE5qWXhURmM]]
+  [[https://dl.dropboxusercontent.com/s/hpqu103hkx168w9/ls-color.png]]
 
 ** Installation
    You can install using GNU =autotools=:
